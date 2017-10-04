@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(800,600);
+        }
+
+        function draw() {
+    
+    strokeWeight(5)
+    stroke("black")
+    ellipse(100,100,60,60)//ears
+    ellipse(600,100,60,60)//ears
+    stroke("red")//outline of face
+    fill(100,60,0)
+    rect(100,100,500,300)//layers of face
+    fill(120,60,0)
+    rect(125,125,450,250)
+    fill(140,60,0)
+    rect(150,150,400,200)
+    fill(160,60,0)
+    rect(175,175,350,150)
+    fill(180,60,0)
+    rect(200,200,300,100)
+    fill('red')
+    stroke("black")
+    ellipse(250,240,40,40)//eyes
+    
+    ellipse(450,240,40,40)//eyes
+    
+    ellipse(350,280,50,50)//nose
+    
+    fill(40,40,40)
+    rect(325,230,50,50)
+    text("Robo Teddy",320,60)//text Robo Teddy
+    line(350,400,300,500)
+    line(350,400,400,500)
+    
+    
+        
+        }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/krayfamouse/p5js/blob/gh-pages/Zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+</html>
